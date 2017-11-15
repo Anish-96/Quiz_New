@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Quiz_New</string>
+    <string name="User_name">Enter Your Name</string>
+    <string name="Quiz_heading">Welcome To The Quiz</string>
+    <string name="string_q1">1. Java is a ........... language.</string>
+    <string name="string_q1_opt1">Strongly Typed Language</string>
+    <string name="string_q1_opt2">Weakly Typed Language</string>
+    <string name="string_q1_opt3">Moderately Typed Language</string>
+    <string name="string_q1_opt4">None of These</string>
+    <string name="string_q2">2. How many primitive data types are there in Java?</string>
+    <string name="string_q2_opt1">6</string>
+    <string name="string_q2_opt2">7</string>
+    <string name="string_q2_opt3">8</string>
+    <string name="string_q2_opt4">9</string>
+    <string name="string_q3">3. In Java byte, short, int and long all of these are.....</string>
+    <string name="string_q3_opt1">Signed</string>
+    <string name="string_q3_opt2">Unsigned</string>
+    <string name="string_q3_opt3">Both Of These</string>
+    <string name="string_q3_opt4">None Of These</string>
+    <string name="string_q4">4. Size of int in Java is.....</string>
+    <string name="string_q4_opt1">16 bit</string>
+    <string name="string_q4_opt2">32 bit</string>
+    <string name="string_q4_opt3">64 bit</string>
+    <string name="string_q4_opt4">Depends on Execution Environment</string>
+    <string name="string_q5">5. The smallest integer type is ......... and its size is ......... bits.</string>
+    <string name="string_q5_opt1">short, 8</string>
+    <string name="string_q5_opt2">byte, 8</string>
+    <string name="string_q5_opt3">byte, 16</string>
+    <string name="string_q5_opt4">short, 16</string>
+    <string name="string_q6">6. Size of float and double in Java is....</string>
+    <string name="string_q6_opt1">32 bit</string>
+    <string name="string_q6_opt2">64 bit</string>
+    <string name="string_q6_opt3">128 bit</string>
+    <string name="string_q6_opt4">None Of These</string>
+    <string name="score_summary_string">Score Summary</string>
+    <string name="dash_string">-</string>
+    <string name="submit_string">Submit</string>
+
+</resources>
+

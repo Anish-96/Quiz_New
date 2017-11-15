@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wal"
+        android:orientation="vertical"
+        tools:context="com.example.anish.quiz.MainActivity">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/User_name"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="#0086c3"
+            android:textColorHint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/Quiz_heading"
+            android:textAlignment="center"
+            android:textColor="#6a0080"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/Notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#ffd740"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/string_q1"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rg_q1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_q1_opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio1"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q1_opt1"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q1_opt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio1"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q1_opt2"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q1_opt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio1"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q1_opt3"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q1_opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio1"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q1_opt4"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/string_q2"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rg_q2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_q2_opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio2"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q2_opt1"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q2_opt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio2"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q2_opt2"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q2_opt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio2"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q2_opt3"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q2_opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio2"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q2_opt4"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/string_q3"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rg_q3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_q3_opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio3"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q3_opt1"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q3_opt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio3"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q3_opt2"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q3_opt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio3"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q3_opt3"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q3_opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio3"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q3_opt4"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/string_q4"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rg_q4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_q4_opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio4"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q4_opt1"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q4_opt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio4"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q4_opt2"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q4_opt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio4"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q4_opt3"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q4_opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio4"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q4_opt4"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/string_q5"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rg_q5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_q5_opt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio5"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q5_opt1"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q5_opt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio5"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q5_opt2"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q5_opt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio5"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q5_opt3"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/rb_q5_opt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:buttonTint="#ffd740"
+                android:onClick="checkRadio5"
+                android:paddingLeft="16dp"
+                android:text="@string/string_q5_opt4"
+                android:textColor="#d50000"
+                android:textStyle="bold|italic"
+                tools:ignore="RtlSymmetry" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="@string/string_q6"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <CheckBox
+            android:id="@+id/cb_q6_opt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:buttonTint="#ffc400"
+            android:onClick="checkRadio6"
+            android:paddingLeft="16dp"
+            android:text="@string/string_q6_opt1"
+            android:textColor="#d50000"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlSymmetry" />
+
+        <CheckBox
+            android:id="@+id/cb_q6_opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:buttonTint="#ffc400"
+            android:onClick="checkRadio6"
+            android:paddingLeft="16dp"
+            android:text="@string/string_q6_opt2"
+            android:textColor="#d50000"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlSymmetry" />
+
+        <CheckBox
+            android:id="@+id/cb_q6_opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:buttonTint="#ffc400"
+            android:onClick="checkRadio6"
+            android:paddingLeft="16dp"
+            android:text="@string/string_q6_opt3"
+            android:textColor="#d50000"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlSymmetry" />
+
+        <CheckBox
+            android:id="@+id/cb_q6_opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:buttonTint="#ffc400"
+            android:onClick="checkRadio6"
+            android:paddingLeft="16dp"
+            android:text="@string/string_q6_opt4"
+            android:textColor="#d50000"
+            android:textStyle="bold|italic"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/Heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/score_summary_string"
+            android:textAlignment="center"
+            android:textColor="#ffd740"
+            android:textSize="18dp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dash_string"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#0086c3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submitScore"
+            android:text="@string/submit_string"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+</ScrollView>
